@@ -4,7 +4,7 @@ import pandas as pd
 import argparse
 
 # takes image from user
-#'C:\Users\big shaq\Downloads\inbox.jpeg'
+#'C:\Users\ishaq\Downloads\inbox.jpeg'
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True, help="Image Path")
 args = vars(ap.parse_args())
