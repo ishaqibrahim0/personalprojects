@@ -7,7 +7,7 @@ api_key = 'AIzaSyAMs5Ir8dS4-e7LkpByMR-c7M95RnwnU4g'
 start = input("Enter Start: ")
 destination = input("Enter Destination: ")
 mode = input('Enter mode of transport: ')
-# Extracting api info to maps.google apis to get the data
+# Extracting api info to maps.google api's to get the data
 result = requests.get(
     "https://maps.googleapis.com/maps/api/directions/json?origin=" + start + "&destination=" + destination + "&mode=" + mode + "&key=" + api_key)
 # https://maps.googleapis.com/maps/api/directions/json?origin=Boston+MA&destination=Santa+Clara+CA&mode=driving&key=AIzaSyAMs5Ir8dS4-e7LkpByMR-c7M95RnwnU4g
