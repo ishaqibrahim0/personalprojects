@@ -39,7 +39,7 @@ cv2.setMouseCallback('image', draw_function)
 def getColorName(R, G, B):
     minimum = 10000
     for i in range(len(csv)):
-        d = abs(R - int(csv.loc[i, "R"])) + abs(G - int(csv.loci[i, "G"])) + abs(B - int(csv.loc[i, "B"]))
+        d = abs(R - int(csv.loc[i, "R"])) + abs(G - int(csv.loc[i, "G"])) + abs(B - int(csv.loc[i, "B"]))
         if d <= minimum:
             minimum = d
             cname = csv.loc[i, "color_name"]
@@ -62,6 +62,6 @@ while True:
             cv2.putText((img, text, (50, 50), 2, 0.8, (0, 0, 0), 2, cv2.LINE_AA))
         clicked = False
         # break loop if user hits 'esc' key
-        if cv2.waitKey(20) & 0xFF == 27:
+        if cv2.waitKey(20):
             break
 cv2.destroyAllWindows()
