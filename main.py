@@ -35,7 +35,7 @@ cv2.setMouseCallback('image', draw_function)
 
 
 # distance calculation
-# equations d = abs(Red – ithRedColor) + (Green – ithGreenColor) + (Blue – ithBlueColor)
+# equations d = abs(Red – RedColor) + (Green – GreenColor) + (Blue – BlueColor)
 def getColorName(R, G, B):
     minimum = 10000
     for i in range(len(csv)):
@@ -64,4 +64,4 @@ while True:
         # break loop if user hits 'esc' key
         if cv2.waitKey(20):
             break
-cv2.destroyAllWindows()
+
